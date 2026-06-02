@@ -120,38 +120,13 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "מה זה סדנת קיפול ספרים?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "סדנת קיפול ספרים היא פעילות יצירתית שבה מקפלים עמודים של ספר ישן ליצירת פסל תלת-ממדי — כמו לב, שם, פרח או כל צורה אחרת. ללא ניסיון קודם, כולם יכולים."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "האם סדנת ספרים מתאימה לחברות ולהייטק?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "כן! סדנת Lilou Books מציעה פעילויות גיבוש ייחודיות לחברות, חברות הייטק ומשרדים. מגיעים אליכם עם כל הציוד, לסדנה של שעתיים או לדוכן happy hour. עבדנו עם Wix, עיריית תל אביב ועוד."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "כמה משתתפים יכולים להשתתף בסדנה?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "סדנת הגיבוש מתאימה לעד 25 משתתפים בקבוצה. דוכן ה-happy hour מתאים לכל מספר של עובדים — כל אחד מגיע בזמן שלו."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "האם מגיעים לאירוע בתל אביב?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "כן, Lilou Books מגיעה אליכם עם כל הציוד — למשרד, לאולם אירועים, לבית או לכל מקום אחר. אנחנו פועלים בתל אביב, גוש דן וסביבות."
-      }
-    }
+    {"@type":"Question","name":"מה זה סדנת קיפול ספרים?","acceptedAnswer":{"@type":"Answer","text":"סדנת קיפול ספרים היא פעילות יצירתית שבה מקפלים עמודי ספר ישן כדי ליצור פסל תלת-ממדי — לב, שם, פרח וכו'. ללא ניסיון קודם, כולם מצליחים."}},
+    {"@type":"Question","name":"למה סדנת ספרים היא פעילות גיבוש טובה לחברות ולהייטק?","acceptedAnswer":{"@type":"Answer","text":"כי היא ייחודית ומחברת — אנשים יוצרים יחד ויוצאים עם פסל ספר מקורי. עבדנו עם Wix, עיריית תל אביב ועוד חברות מובילות."}},
+    {"@type":"Question","name":"האם צריך ניסיון קודם בקיפול ספרים?","acceptedAnswer":{"@type":"Answer","text":"בכלל לא. הסדנה מיועדת לכולם ללא ניסיון. להב מדריכה צעד אחר צעד בקצב אישי."}},
+    {"@type":"Question","name":"האם מגיעים למשרד שלנו?","acceptedAnswer":{"@type":"Answer","text":"כן! Lilou Books מגיעה אליכם עם כל הציוד — למשרד, אולם, בית. פועלים בתל אביב, גוש דן וסביבות."}},
+    {"@type":"Question","name":"כמה עולה סדנת קיפול ספרים לחברה?","acceptedAnswer":{"@type":"Answer","text":"המחיר תלוי בסוג הסדנה ומספר המשתתפים. כל הציוד כלול. מלאו טופס ונחזור תוך 24 שעות עם הצעה מותאמת."}},
+    {"@type":"Question","name":"מה ההבדל בין סדנת גיבוש לדוכן Happy Hour?","acceptedAnswer":{"@type":"Answer","text":"סדנת גיבוש: 2 שעות, עד 25 משתתפים, כולם יחד. דוכן Happy Hour: כל אחד מגיע מתי שנוח, ~15 דקות, ולוקח הביתה ספר מקופל."}},
+    {"@type":"Question","name":"מה ההבדל בין Lilou Books לסדנאות יצירה אחרות?","acceptedAnswer":{"@type":"Answer","text":"סדנת קיפול ספרים היא נישה ייחודית בישראל — כמעט אין מתחרים. מגיעים אליכם, הכל כלול, מדריכה אישית. חוויה שאנשים מדברים עליה."}}
   ]
 }
 </script>
@@ -455,6 +430,7 @@ footer{background:var(--sand);border-top:1px solid var(--border);padding:2.5rem 
     <a href="#private" class="nav-link aud-priv">✨ פרטי</a>
     <a href="#custom" class="nav-link">🎁 הזמנות</a>
     <a href="#reviews" class="nav-link">⭐ ביקורות</a>
+    <a href="#faq" class="nav-link">❓ שאלות</a>
   </div>
   <a href="#contact" class="nav-cta">הזמינו סדנה</a>
 </nav>
@@ -823,6 +799,140 @@ footer{background:var(--sand);border-top:1px solid var(--border);padding:2.5rem 
 </section>
 
 <!-- CONTACT -->
+
+<!-- FAQ SECTION -->
+<section style="padding:5.5rem 4rem;background:var(--warm-white)" id="faq">
+  <div class="inner" style="max-width:800px">
+    <div class="sec-eyebrow ey-corp" style="margin-bottom:1rem">❓ שאלות נפוצות</div>
+    <h2 style="margin-bottom:2.5rem">כל מה שרציתם לדעת<br><em>על סדנאות הספרים</em></h2>
+
+    <div id="faqList">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          מה זה בכלל סדנת קיפול ספרים? 📖
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          סדנת קיפול ספרים (Book Folding) היא פעילות יצירתית שבה לוקחים ספר ישן ומקפלים את עמודיו ביד כדי ליצור פסל תלת-ממדי — לב, שם, פרח, מגן דוד, צורה גיאומטרית או כל עיצוב אחר. אין צורך בניסיון קודם, כולם מצליחים, וכל אחד יוצא עם יצירה מקורית שלו לגמרי.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          מה ההבדל בין קיפול ספרים לפיסול ספרים? ✂️
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          קיפול ספרים (Book Folding) — מקפלים עמודים בדיוק לפי תבנית כדי ליצור צורה תלת-ממדית. פיסול ספרים (Book Sculpting / Book Carving) — גוזרים וחוצבים בדפים כדי ליצור פסל. בסדנאות של Lilou Books משלבים את שתי הטכניקות — כל אחד לומד ויוצר בסגנון שמתאים לו.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          למה סדנת ספרים היא פעילות גיבוש טובה לחברות ולהייטק? 🏢
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          כי היא שונה מכל מה שעשיתם: לא עוד bowling, לא עוד escape room. סדנת הספרים שקטה, מרגיעה ומחברת — אנשים מדברים, צוחקים ויוצרים יחד. כל עובד עוזב עם משהו שהוא עשה בידיים שלו, והגאווה שמרגישים בסוף — אין דבר כזה בשום פעילות אחרת. עבדנו עם Wix, עיריית תל אביב, ועוד חברות מובילות.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          מה ההבדל בין סדנת הגיבוש לבין דוכן Happy Hour? 🎉
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <strong>סדנת גיבוש (2 שעות):</strong> כולם יושבים יחד, לומדים ויוצרים בהדרכה מלאה — חוויה קבוצתית עמוקה, עד 25 משתתפים.<br><br>
+          <strong>דוכן Happy Hour (~15 דקות לאדם):</strong> דוכן שמוצב באירוע שלכם. כל עובד מגיע מתי שנוח לו, עושה ספר מקופל בעצמו, ולוקח הביתה. אין תזמון, כולם במקביל. מושלם לאירועי חברה, כנסים ומסיבות.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          האם צריך ניסיון קודם בקיפול ספרים? 🤔
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          בכלל לא! זו בדיוק הנקודה — הסדנה מיועדת לאנשים שמроду לא יצרו. להב מדריכה צעד אחר צעד, לכל אחד בקצב שלו. אנשים שנכנסים עם "אני לא יצירתי בכלל" יוצאים עם פסל ספר מדהים ותחושת הישג אמיתית.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          כמה עולה סדנת קיפול ספרים לחברה? 💰
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          המחיר תלוי בסוג הסדנה, מספר המשתתפים ומיקום האירוע. כל הציוד כלול במחיר. מלאו טופס יצירת קשר ונחזור אליכם תוך 24 שעות עם הצעה מותאמת אישית לחברה שלכם.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          האם מגיעים למשרד שלנו? 📍
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          כן! Lilou Books מגיעה אליכם עם כל הציוד — למשרד, לאולם אירועים, לגן, לבית או לכל מקום אחר. אנחנו פועלים בתל אביב, גוש דן וסביבות, ולאירועים מיוחדים גם בשאר הארץ.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          מה מקבלים בסוף הסדנה? 🎁
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          כל משתתף יוצא עם ספר מקופל או מפוסל שיצר בידיים שלו — יצירת אמנות מקורית לגמרי. ניתן לקחת הביתה, להציג על מדף, לתת במתנה. בנוסף, ניתן להזמין ספרים מקופלים בהתאמה אישית (עם שם, תאריך, לוגו חברה) כמתנות לכל הצוות.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          האם הסדנה מתאימה גם לגיל הזהב ולילדים? 👴🎨
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          בהחלט. לגיל הזהב — הסדנה מותאמת לקצב אישי, עם הרבה סבלנות ואהבה. מתאים לבתי אבות, מרכזי יום ומועדוני גמלאים. לילדים — מגיל 8, מושלם לימי הולדת, ימי כיף ומחנות קיץ. כולם, בלי יוצא מן הכלל, מצליחים וגאים ביצירה שלהם.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          מה ההבדל בין Lilou Books לסדנאות יצירה אחרות? ✨
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          רוב הסדנאות הן ציור, קרמיקה או פרחים — דברים שהרבה מציעים. סדנת קיפול ספרים היא נישה ייחודית בישראל — כמעט אין מתחרים. בנוסף: מגיעים אליכם, הכל כלול, מדריכה אישית ומסורה, ויצירה שאפשר להציג בגאווה. זו לא עוד סדנה — זו חוויה שאנשים מדברים עליה.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.faq-item{border-bottom:1px solid var(--border);overflow:hidden}
+.faq-q{width:100%;text-align:right;background:none;border:none;padding:1.3rem 0;font-family:'Heebo',sans-serif;font-size:1rem;font-weight:600;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:color 0.2s}
+.faq-q:hover{color:var(--coral)}
+.faq-arrow{font-size:0.75rem;color:var(--ink-soft);transition:transform 0.25s;flex-shrink:0}
+.faq-q.open .faq-arrow{transform:rotate(180deg)}
+.faq-a{display:none;padding:0 0 1.3rem;font-size:0.92rem;line-height:1.8;color:var(--ink-mid)}
+.faq-a.open{display:block}
+</style>
+
+<script>
+function toggleFaq(btn){
+  var a=btn.nextElementSibling;
+  var isOpen=a.classList.contains('open');
+  document.querySelectorAll('.faq-a').forEach(function(el){el.classList.remove('open')});
+  document.querySelectorAll('.faq-q').forEach(function(el){el.classList.remove('open')});
+  if(!isOpen){a.classList.add('open');btn.classList.add('open');}
+}
+</script>
+
 <section class="contact-section" id="contact">
   <div class="contact-wrap">
     <div class="contact-text">
